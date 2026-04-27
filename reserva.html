@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav container">
+        <div class="logo">Vital Fit</div>
+        <!-- Sustituimos el div por una lista desordenada -->
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cita-previa.html" class="btn-nav">Cita previa</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="container formulario">
+    <h2 class="text-center">Formulario de cita previa</h2>
+
+    <form>
+
+    <fieldset>
+        <legend>Datos de contacto</legend>
+
+        <label for="nombre" class="required">Nombre completo</label>
+        <input type="text" id="nombre" placeholder="Nombre completo" required>
+
+        <label for="empresa">Empresa</label>
+        <input type="text" id="empresa" placeholder="Empresa">
+
+        <label for="email" class="required">Email profesional</label>
+        <input type="email" id="email" placeholder="Email profesional" required>
+
+        <label for="telefono" class="required">Teléfono</label>
+        <input type="tel" id="telefono" placeholder="Teléfono" required>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Detalles de la reserva</legend>
+
+        <label for="fecha" class="required">Fecha actual</label>
+        <input type="date" id="fecha" required>
+
+        <label for="servicio" class="required">Elige un servicio</label>
+        <select id="servicio" required>
+            <option value="">Selecciona una opción</option>
+            <option value="puesto_flexible">Puesto Flexible</option>
+            <option value="puesto_fijo">Puesto Fijo</option>
+            <option value="oficina_privada">Oficina Privada</option>
+            <option value="pase_diario">Pase Diario</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <label for="mensaje" class="required">Describe tu proyecto</label>
+        <textarea id="mensaje" placeholder="Cuéntanos sobre ti" required></textarea>
+    </fieldset>
+
+
+    <div class="checkbox">
+        <input type="checkbox" id="privacidad" required>
+        <label for="privacidad">Acepto la política de privacidad</label>
+    </div>
+
+    <button type="submit">Enviar</button>
+
+</form>
+</section>
+
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <p>© 2026 Cowork · Realizado por César Sainz</p>
+    </div>
+</footer>
+
+</body>
+</html>
